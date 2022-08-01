@@ -1,0 +1,15 @@
+<p>Examples of hbs:</p>
+<h1>template1 {{testTemplate.firstName}} </h1>
+<h1> {{testTemplate.lastName}} </h1>
+<h5>{{test}}</h5>
+
+<ul class="people_list">
+  {{#each people}}
+  <li class="{{#if this.testClass}}testKlasa{{/if}} bg-red-100 text-4xl font-bold">{{this.content}}</li>
+  {{/each}}
+  {{> button-blue}}
+</ul>
+
+{{#if testTemplate.test}}
+<h1>{{testTemplate.firstName}} {{testTemplate.lastName}}</h1>
+{{/if}}
